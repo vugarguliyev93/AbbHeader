@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: sf-pro;
+  src: url(/src/font/sf-pro/SFPRODISPLAYREGULAR.OTF);
+}
+.container .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #f6f7f8;
+}
+.container .head .head-menu-hidden {
+  display: none;
+}
+.container .head .head-menu a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #666;
+  background-color: transparent;
+  font-family: system-ui;
+  margin-right: 1.5rem;
+}
+.container .head .head-menu a:hover {
+  text-decoration: underline;
+}
+.container .head .head-menu a:last-child {
+  border: 1.5px solid #0056c1;
+  border-radius: 40px;
+  color: #0056c1 !important;
+  display: inline-block;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+.container .head .head-menu a:last-child:hover {
+  background-color: #0056c1;
+  color: white !important;
+}
+.container .head .right-side span {
+  margin-right: 25px;
+  font-size: 17px;
+  color: #666;
+  background-color: transparent;
+  font-family: system-ui;
+}
+.container .head .right-side a {
+  margin-right: 25px;
+  font-size: 17px;
+  color: #666;
+  background-color: transparent;
+  font-family: system-ui;
+  text-decoration: none;
+}
+.container .sub-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 40px;
+  height: 80px;
+  border-bottom: 1px solid #f4f4f4;
+  align-items: center;
+}
+.container .sub-head .sub-nav {
+  display: flex;
+  align-items: center;
+}
+.container .sub-head .sub-nav img {
+  height: 50px;
+}
+.container .sub-head .sub-nav img:nth-child(1) {
+  margin-right: 40px;
+}
+.container .sub-head .sub-nav a {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-weight: 500;
+  font-family: system-ui;
+  margin-left: 20px;
+}
+.container .sub-head .sub-right-nav a {
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0056c1;
+  font-family: system-ui;
+  text-decoration: none;
+}
+.container .sub-head .side-menu-icon {
+  display: none;
+}
+.container .menu-icon {
+  width: 28px;
+  height: 5px;
+  background-color: #706464;
+  margin: 3px 0;
+}
+.container .navbar-header {
+  padding: 40px 40px;
+}
+.container .navbar-header .nav-menu {
+  position: relative;
+}
+.container .navbar-header .nav-menu .border {
+  position: relative;
+  position: relative;
+  display: inline-block;
+  height: 3rem;
+}
+.container .navbar-header .nav-menu .border::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.24rem;
+  background-color: #3b8ae0;
+  bottom: 0;
+  left: 0;
+  top: 2.8rem;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.container .navbar-header .nav-menu .underline::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s eases;
+}
+.container .navbar-header .nav-menu .underline:hover::after {
+  transform: scale(1, 1);
+}
+.container .navbar-header .nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+.container .navbar-header .nav-menu ul li .hover-menu {
+  display: none;
+  position: absolute;
+  padding: 4rem 3.5rem;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #ede7e7;
+  transition: all 0.4s ease;
+}
+.container .navbar-header .nav-menu ul li .hover-menu a {
+  margin-right: 19px;
+  text-decoration: none;
+  color: #262626;
+  font-size: 18px;
+  font-family: auto;
+}
+.container .navbar-header .nav-menu ul li:hover .hover-menu {
+  display: flex;
+}
+.container .navbar-header .nav-menu ul li a {
+  margin-right: 19px;
+  text-decoration: none;
+  color: #17253a;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .head .head-menu-hidden {
+    display: block !important;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  .head .head-menu {
+    display: none;
+  }
+  .head .right-side {
+    display: flex;
+    justify-content: end;
+  }
+  .sub-head .sub-nav .sub-nav-parts {
+    display: none;
+  }
+  .sub-head .sub-right-nav {
+    display: none;
+  }
+  .sub-head .side-menu-icon {
+    display: block !important;
+  }
+  .navbar-header {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
